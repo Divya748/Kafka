@@ -80,3 +80,4 @@ Use the consumer to read messages from a topic in real-time. By default, it only
 ```cmd
 .\bin\windows\kafka-console-consumer.bat --topic my-topic --bootstrap-server localhost:9092
 ```
+---
