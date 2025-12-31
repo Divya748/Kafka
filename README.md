@@ -1,4 +1,15 @@
-# Kafka
+# Kafka version Roadmap
+
+| Kafka Version | Status of KRaft | Note |
+| :--- | :--- | :--- |
+| **v2.8** | **Early Access** | First introduction; for testing only. |
+| **v3.0** | **Preview** | More stable, but still not recommended for production. |
+| **v3.3** | **Production Ready** | Officially declared ready for production for **new** clusters. |
+| **v3.5** | **Deprecated** | ZooKeeper mode was officially deprecated. |
+| **v3.6** | **GA Migration** | Migration tools from ZK to KRaft became General Availability (GA). |
+| **v4.0** | **Removed** | **ZooKeeper is completely removed.** KRaft is the only mode. |
+
+---
 
 # Kafka on Windows CLI Cheat Sheet (KRaft vs Zookeeper)
 
@@ -60,7 +71,7 @@ KRaft requires a one-time setup to initialize the log directories.
 | Action | Command |
 | :--- | :--- |
 | **Create Topic** | `.\bin\windows\kafka-topics.bat --create --topic my-topic --bootstrap-server localhost:9092 --partitions 3 --replication-factor 1` |
-| **List Topics** | `.\bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092` |
+| **List Topics** | `.\bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092` **from version 2.2+** |
 | **Describe Topic** | `.\bin\windows\kafka-topics.bat --describe --topic my-topic --bootstrap-server localhost:9092` |
 | **Delete Topic** | `.\bin\windows\kafka-topics.bat --delete --topic my-topic --bootstrap-server localhost:9092` |
 
