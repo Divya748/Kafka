@@ -89,6 +89,9 @@ Use this to send messages to a topic via the terminal:
 Use the consumer to read messages from a topic in real-time. By default, it only displays messages sent *after* the consumer has started.
 
 ```cmd
-.\bin\windows\kafka-console-consumer.bat --topic my-topic --bootstrap-server localhost:9092
+.\bin\windows\kafka-console-consumer.bat --topic my-topic --bootstrap-server localhost:9092 --from-beginning
 ```
+
+The --from-beginning option tells the consumer to read all the messages from the topic, starting from the earliest one.
+
 ---
